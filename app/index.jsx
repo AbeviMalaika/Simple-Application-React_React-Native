@@ -5,16 +5,11 @@ import fondEcran from "@/assets/images/tropical-beach.jpg"
 
 export default function Index() {
   return (
-
-
-
-
     <ImageBackground
       style={styles.fondEcran}
       source={fondEcran}
       resizeMode="cover"
     >
-      {/* SafeAreaView uniquement pour le contenu */}
       <SafeAreaView style={styles.safeAreaContenu}>
         <Text style={styles.titre}>To-Do List</Text>
         <ToDoList />
@@ -29,22 +24,22 @@ const styles = {
     width: "100%",
     alignItems: "center",
     justifyContent: "flex-start",
-    paddingHorizontal: 16, // garde tes marges
+    paddingHorizontal: 16,
   },
 
   titre: {
     color: "white",
-    fontSize: 40,       // réduit pour mobile, tu peux adapter
+    fontSize: 40,
     fontWeight: "100",
     marginTop: 20,
     marginBottom: 20,
   },
 
   fondEcran: {
-    flex: 1,            // prend tout l'espace dispo
-    width: "100%",      // largeur totale
-    height: "100%",     // hauteur totale
+    flex: 1,
+    width: "100%",
+    height: "100%",
     alignItems: "center",
-    justifyContent: "flex-start", // pour que le contenu commence en haut
+    justifyContent: "flex-start", 
   },
 }
